@@ -38,8 +38,7 @@
 {
     [super viewDidLoad];
     
-    // self.view.backgroundColor = [UIColor colorWithRed:40/255.0f green:42/255.0f blue:57/255.0f alpha:1.0f];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:148/255.0f green:154/255.0f blue:172/255.0f alpha:1.0f];
+
     
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     _managedObjectContext = [appDelegate managedObjectContext];
@@ -47,14 +46,7 @@
     [plateNumberField becomeFirstResponder];
     
     
-    
-    
-    UIImage *defaultBG = [UIImage imageNamed:@"BackgroundGray.png"];
-    UIImageView *defaultBGView = [[UIImageView alloc] initWithImage:defaultBG];
-    self.tableView.backgroundView = defaultBGView;
-    
-    [self.tableView setSeparatorColor:[UIColor clearColor]];
-    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
     
   
     
@@ -96,10 +88,10 @@
 	UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 	headerLabel.backgroundColor = [UIColor clearColor];
 	headerLabel.opaque = NO;
-	headerLabel.textColor = [UIColor whiteColor];
-	headerLabel.highlightedTextColor = [UIColor whiteColor];
-    headerLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
-    headerLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+	headerLabel.textColor = [UIColor darkTextColor];
+	headerLabel.highlightedTextColor = [UIColor clearColor];
+    // headerLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
+    // headerLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
 	//headerLabel.font = [UIFont boldSystemFontOfSize:18];
     headerLabel.font = [UIFont fontWithName:@"Helvetica Nueue Light" size:18];
 	headerLabel.frame = CGRectMake(10.0, 0.0, 300.0, 44.0);

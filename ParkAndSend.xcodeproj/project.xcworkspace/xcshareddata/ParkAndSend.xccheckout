@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>907DC5E2-2F4E-4C1D-A5BA-DB1861D8A7D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ParkAndSend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A3038E2A-C245-463A-8B51-697B3993882B</key>
+		<string>https://github.com/teckx5/Park-and-Send.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ParkAndSend.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A3038E2A-C245-463A-8B51-697B3993882B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/teckx5/Park-and-Send.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A3038E2A-C245-463A-8B51-697B3993882B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A3038E2A-C245-463A-8B51-697B3993882B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ParkAndSend</string>
+		</dict>
+	</array>
+</dict>
+</plist>

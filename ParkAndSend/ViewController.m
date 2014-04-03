@@ -68,8 +68,8 @@
     // [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
     
     // Set View Background Nav Bar Colour
-    self.view.backgroundColor = [UIColor colorWithRed:40/255.0f green:42/255.0f blue:57/255.0f alpha:1.0f];
-    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:148/255.0f green:154/255.0f blue:172/255.0f alpha:1.0f];
+    // self.view.backgroundColor = [UIColor colorWithRed:40/255.0f green:42/255.0f blue:57/255.0f alpha:1.0f];
+    // self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:148/255.0f green:154/255.0f blue:172/255.0f alpha:1.0f];
     
    
     
@@ -147,10 +147,10 @@
     
     
     //STEP 1 Construct Panels
-    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send."];
+//    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send."];
     
     //You may also add in a title for each panel
-    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." ];
+//    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." ];
     
     //STEP 2 Create IntroductionView
     
@@ -164,13 +164,14 @@
     /*A more customized version*/
     //MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) headerText:@"MYIntroductionView" panels:@[panel, panel2] languageDirection:MYLanguageDirectionLeftToRight];
     
-    MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) panels:@[panel, panel2] languageDirection:MYLanguageDirectionLeftToRight];
+//    MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height) panels:@[panel, panel2] languageDirection:MYLanguageDirectionLeftToRight];
     
-    [introductionView setBackgroundImage:[UIImage imageNamed:@"BackgroundGray"]];
+//    [introductionView setBackgroundImage:[UIImage imageNamed:@"BackgroundGray"]];
+  
     
     
     //Set delegate to self for callbacks (optional)
-    introductionView.delegate = self;
+//    introductionView.delegate = self;
     
     //STEP 3: Show introduction view
     
@@ -197,7 +198,7 @@
      
         // Initate Introduction Slides
         
-        [introductionView showInView:self.view];
+//        [introductionView showInView:self.view];
         
     } else {
         //Show All Send As SMS Items

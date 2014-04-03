@@ -260,6 +260,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jonathan Larkin";
+				TargetAttributes = {
+					90947CA6177CCED40054852B = {
+						DevelopmentTeam = VNWV747J6Z;
+					};
+				};
 			};
 			buildConfigurationList = 90947CA2177CCED40054852B /* Build configuration list for PBXProject "ParkAndSend" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -405,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParkAndSend/ParkAndSend-Prefix.pch";
 				INFOPLIST_FILE = "ParkAndSend/ParkAndSend-Info.plist";
@@ -423,8 +429,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Jonathan Larkin (VNWV747J6Z)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jonathan Larkin (VNWV747J6Z)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jonathan Larkin (8LX3VGLQ35)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParkAndSend/ParkAndSend-Prefix.pch";
 				INFOPLIST_FILE = "ParkAndSend/ParkAndSend-Info.plist";
@@ -434,8 +440,8 @@
 					"\"$(SRCROOT)/ParkAndSend\"",
 				);
 				PRODUCT_NAME = ParkAndSend;
-				PROVISIONING_PROFILE = "34B2E541-30F5-4480-B176-121DC64A9076";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "34B2E541-30F5-4480-B176-121DC64A9076";
+				PROVISIONING_PROFILE = "26D24B3F-8D31-4C3B-9175-84992D6F7D35";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "26D24B3F-8D31-4C3B-9175-84992D6F7D35";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

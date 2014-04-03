@@ -50,12 +50,7 @@
     
     [self setPlateNumbers:[[NSMutableArray alloc] initWithCapacity:100]];
     
-    UIImage *defaultBG = [UIImage imageNamed:@"BackgroundGray.png"];
-    UIImageView *defaultBGView = [[UIImageView alloc] initWithImage:defaultBG];
-    self.tableView.backgroundView = defaultBGView;
-    
-    [self.tableView setSeparatorColor:[UIColor darkGrayColor]];
-    //[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
     
 }
 
@@ -132,7 +127,7 @@
     cell.backgroundColor = [UIColor clearColor];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor darkGrayColor];
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica Nueue Light" size:28];
 
 }
