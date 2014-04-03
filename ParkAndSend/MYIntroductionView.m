@@ -27,7 +27,7 @@
 
 #define DEFAULT_BACKGROUND_COLOR [UIColor colorWithWhite:0 alpha:0.9]
 #define HEADER_VIEW_HEIGHT 50
-#define PAGE_CONTROL_PADDING 30
+#define PAGE_CONTROL_PADDING 2
 #define TITLE_FONT [UIFont fontWithName:@"HelveticaNeue-Bold" size:17.0]
 #define TITLE_TEXT_COLOR [UIColor whiteColor]
 #define DESCRIPTION_FONT [UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]
