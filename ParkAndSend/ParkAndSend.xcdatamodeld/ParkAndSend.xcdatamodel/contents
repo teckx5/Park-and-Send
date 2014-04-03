@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="11G56" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Cars" representedClassName="Cars" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="numbers" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="History" representedClassName="History" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="selectedCar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectedDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectedMins" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectedZone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Cars" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="History" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
+</model>
