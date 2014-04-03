@@ -1,8 +1,8 @@
 Park & Send - Your Parking Tag Assistant
 
-iOS 6 
+iOS 7
 
-Version 1.0
+Version 1.1
 
 
 Park & Send is an assistant app for all Parking Tag customers. This app will make it even quicker for you to pay for, or extend, your parking time.
