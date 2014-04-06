@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-#import "MYIntroductionView.h"
 
 
-@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, MYIntroductionDelegate, NSFetchedResultsControllerDelegate>{
+@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, NSFetchedResultsControllerDelegate>{
     UIPickerView *parkZonePicker;
     NSArray *parkZones;
     NSArray *parkTime;

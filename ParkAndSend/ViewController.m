@@ -13,7 +13,6 @@
 
 #import "LocalyticsSession.h"
 
-// #import "AddNumberPlateListItemViewController.h"
 
 @interface ViewController ()
 
@@ -144,7 +143,7 @@
        
     
     
-    
+ //TODO
     
     //STEP 1 Construct Panels
 //    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send."];
@@ -152,31 +151,7 @@
     //You may also add in a title for each panel
 //    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." ];
     
-    //STEP 2 Create IntroductionView
-    
-    /*A standard version*/
-    //MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) headerImage:[UIImage imageNamed:@"SampleHeaderImage.png"] panels:@[panel, panel2]];
-    
-    
-    /*A version with no header (ala "Path")*/
-   // MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) panels:@[panel, panel2]];
-    
-    /*A more customized version*/
-    //MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) headerText:@"MYIntroductionView" panels:@[panel, panel2] languageDirection:MYLanguageDirectionLeftToRight];
-    
-//    MYIntroductionView *introductionView = [[MYIntroductionView alloc] initWithFrame:CGRectMake(0, 30, self.view.frame.size.width, self.view.frame.size.height) panels:@[panel, panel2] languageDirection:MYLanguageDirectionLeftToRight];
-    
-//    [introductionView setBackgroundImage:[UIImage imageNamed:@"BackgroundGray"]];
-  
-    
-    
-    //Set delegate to self for callbacks (optional)
-//    introductionView.delegate = self;
-    
-    //STEP 3: Show introduction view
-    
-    
-    
+
     
     
     

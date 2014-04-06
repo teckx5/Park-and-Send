@@ -44,6 +44,8 @@
 		90FAB84C1795F46700A7F70B /* ParkAndSend-Start-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FAB8491795F46700A7F70B /* ParkAndSend-Start-@2x.png */; };
 		90FAB84D1795F46700A7F70B /* ParkAndSend-Start-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FAB84A1795F46700A7F70B /* ParkAndSend-Start-568h@2x.png */; };
 		90FAB84E1795F46700A7F70B /* ParkAndSend-Start.png in Resources */ = {isa = PBXBuildFile; fileRef = 90FAB84B1795F46700A7F70B /* ParkAndSend-Start.png */; };
+		AB14592218F1B17800B6C03E /* MYBlurIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14591F18F1B17800B6C03E /* MYBlurIntroductionView.m */; };
+		AB14592318F1B17800B6C03E /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14592118F1B17800B6C03E /* MYIntroductionPanel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +99,10 @@
 		90FAB8491795F46700A7F70B /* ParkAndSend-Start-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ParkAndSend-Start-@2x.png"; sourceTree = "<group>"; };
 		90FAB84A1795F46700A7F70B /* ParkAndSend-Start-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ParkAndSend-Start-568h@2x.png"; sourceTree = "<group>"; };
 		90FAB84B1795F46700A7F70B /* ParkAndSend-Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ParkAndSend-Start.png"; sourceTree = "<group>"; };
+		AB14591E18F1B17800B6C03E /* MYBlurIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBlurIntroductionView.h; sourceTree = "<group>"; };
+		AB14591F18F1B17800B6C03E /* MYBlurIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBlurIntroductionView.m; sourceTree = "<group>"; };
+		AB14592018F1B17800B6C03E /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIntroductionPanel.h; sourceTree = "<group>"; };
+		AB14592118F1B17800B6C03E /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIntroductionPanel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,7 @@
 		90947CB0177CCED40054852B /* ParkAndSend */ = {
 			isa = PBXGroup;
 			children = (
+				AB14591D18F1B17800B6C03E /* MYBlurIntroductionView */,
 				9069FF29179741AA002048EF /* PopOver */,
 				9036590517947ED0004B8204 /* Localytics */,
 				90B2E868178DFB6C002729B9 /* CoreData */,
@@ -230,6 +237,17 @@
 				902510F217AFEC9A007920B7 /* History.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		AB14591D18F1B17800B6C03E /* MYBlurIntroductionView */ = {
+			isa = PBXGroup;
+			children = (
+				AB14591E18F1B17800B6C03E /* MYBlurIntroductionView.h */,
+				AB14591F18F1B17800B6C03E /* MYBlurIntroductionView.m */,
+				AB14592018F1B17800B6C03E /* MYIntroductionPanel.h */,
+				AB14592118F1B17800B6C03E /* MYIntroductionPanel.m */,
+			);
+			path = MYBlurIntroductionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB14592318F1B17800B6C03E /* MYIntroductionPanel.m in Sources */,
 				90947CB7177CCED50054852B /* main.m in Sources */,
 				90947CBB177CCED50054852B /* AppDelegate.m in Sources */,
 				90947CC7177CCED50054852B /* ViewController.m in Sources */,
@@ -322,6 +341,7 @@
 				903ED20D1786263000007C0C /* AddNumberPlateListItemViewController.m in Sources */,
 				90914115178835CC00617297 /* ParkAndSend.xcdatamodeld in Sources */,
 				90B2E874178EA3F1002729B9 /* Cars.m in Sources */,
+				AB14592218F1B17800B6C03E /* MYBlurIntroductionView.m in Sources */,
 				9069FF2E179741B5002048EF /* MYIntroductionPanel.m in Sources */,
 				9069FF2F179741B5002048EF /* MYIntroductionView.m in Sources */,
 				902510F317AFEC9A007920B7 /* History.m in Sources */,
