@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
+#import "MYBlurIntroductionView.h"
 
 
-
-@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, NSFetchedResultsControllerDelegate>{
+@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate, MYIntroductionDelegate, NSFetchedResultsControllerDelegate>{
     UIPickerView *parkZonePicker;
     NSArray *parkZones;
     NSArray *parkTime;

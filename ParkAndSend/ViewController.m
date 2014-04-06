@@ -142,18 +142,7 @@
     
        
     
-    
- //TODO
-    
-    //STEP 1 Construct Panels
-//    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send."];
-    
-    //You may also add in a title for each panel
-//    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." ];
-    
 
-    
-    
     
     
     //Show Hide Buttons Send Text and Add Car
@@ -172,8 +161,8 @@
         [self.sendTextButton setHidden:TRUE];
      
         // Initate Introduction Slides
-        
-//        [introductionView showInView:self.view];
+        //Calling this methods builds the intro and adds it to the screen. See below.
+        [self buildIntro];
         
     } else {
         //Show All Send As SMS Items
@@ -422,6 +411,74 @@
 
 }
 
+
+
+
+#pragma mark - Build MYBlurIntroductionView
+
+-(void)buildIntro{
+    
+    
+    
+    //TODO
+    
+    //STEP 1 Construct Panels
+    //    MYIntroductionPanel *panel = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage1"] description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send."];
+    
+    //You may also add in a title for each panel
+    //    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithimage:[UIImage imageNamed:@"SampleImage2"] title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." ];
+    
+    
+    
+    
+    
+    MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"introductionViewPanel1"];
+    
+    
+    //Create Stock Panel with header
+ //   UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
+//    MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Welcome" description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send." image:[UIImage imageNamed:@"SampleImage1.png"]];
+    
+    //Create Stock Panel With Image
+    MYIntroductionPanel *panel2 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Getting Started!" description:@"Please add the vehicle license plate number registered with your Parking Tag account." image:[UIImage imageNamed:@"SampleImage2.png"]];
+    
+    
+    //Add panels to an array
+    NSArray *panels = @[panel1, panel2];
+    
+    //Create the introduction view and set its delegate
+    MYBlurIntroductionView *introductionView = [[MYBlurIntroductionView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    introductionView.delegate = self;
+    introductionView.BackgroundImageView.image = [UIImage imageNamed:@"SampleBackground.png"];
+    [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
+    //introductionView.LanguageDirection = MYLanguageDirectionRightToLeft;
+    
+    //Build the introduction with desired panels
+    [introductionView buildIntroductionWithPanels:panels];
+    
+    //Add the introduction to your view
+    [self.view addSubview:introductionView];
+}
+
+#pragma mark - MYIntroduction Delegate
+
+-(void)introduction:(MYBlurIntroductionView *)introductionView didChangeToPanel:(MYIntroductionPanel *)panel withIndex:(NSInteger)panelIndex{
+    NSLog(@"Introduction did change to panel %d", panelIndex);
+    
+    //You can edit introduction view properties right from the delegate method!
+    //If it is the first panel, change the color to green!
+    if (panelIndex == 0) {
+        [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
+    }
+    //If it is the second panel, change the color to blue!
+    else if (panelIndex == 1){
+        [introductionView setBackgroundColor:[UIColor colorWithRed:50.0f/255.0f green:79.0f/255.0f blue:133.0f/255.0f alpha:0.65]];
+    }
+}
+
+-(void)introduction:(MYBlurIntroductionView *)introductionView didFinishWithType:(MYFinishType)finishType {
+    NSLog(@"Introduction did finish");
+}
 
 
 
