@@ -134,10 +134,14 @@
     }
     else {
         
+
         
-        panelTitleHeight = [self.PanelTitle sizeWithFont:kTitleFont constrainedToSize:CGSizeMake(frame.size.width - 2*kLeftRightMargins, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping].height;
         
-        panelDescriptionHeight = [self.PanelDescription sizeWithFont:kDescriptionFont constrainedToSize:CGSizeMake(frame.size.width - 2*kLeftRightMargins, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping].height;
+        
+        
+        // panelTitleHeight = [self.PanelTitle sizeWithFont:kTitleFont constrainedToSize:CGSizeMake(frame.size.width - 2*kLeftRightMargins, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping].height;
+        
+     //   panelDescriptionHeight = [self.PanelDescription sizeWithFont:kDescriptionFont constrainedToSize:CGSizeMake(frame.size.width - 2*kLeftRightMargins, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping].height;
     }
     
     //Create title label

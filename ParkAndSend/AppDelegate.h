@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  ParkAndSend
 //
-//  Created by Stephanie on 27/06/2013.
+
 //  Copyright (c) 2013 Jonathan Larkin. All rights reserved.
 //
 

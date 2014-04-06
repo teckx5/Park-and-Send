@@ -2,7 +2,6 @@
 //  ViewController.m
 //  ParkAndSend
 //
-//  Created by Stephanie on 27/06/2013.
 //  Copyright (c) 2013 Jonathan Larkin. All rights reserved.
 //
 
@@ -432,11 +431,14 @@
     
     
     
+ //   MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"introductionViewPanel1"];
+    
+    //Create custom panel with events
     MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) nibNamed:@"introductionViewPanel1"];
     
     
     //Create Stock Panel with header
- //   UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
+//   UIView *headerView = [[NSBundle mainBundle] loadNibNamed:@"TestHeader" owner:nil options:nil][0];
 //    MYIntroductionPanel *panel1 = [[MYIntroductionPanel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) title:@"Welcome" description:@"Park & Send is an assistant app\rfor all Parking Tag customers.\rWe make it even quicker to pay for\rand extend your parking time.\r\rYou simply scroll through the\r zone and time options,\rwe compose your Parking Tag SMS,\ryou just tap send." image:[UIImage imageNamed:@"SampleImage1.png"]];
     
     //Create Stock Panel With Image
@@ -468,11 +470,11 @@
     //You can edit introduction view properties right from the delegate method!
     //If it is the first panel, change the color to green!
     if (panelIndex == 0) {
-        [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
+       // [introductionView setBackgroundColor:[UIColor colorWithRed:90.0f/255.0f green:175.0f/255.0f blue:113.0f/255.0f alpha:0.65]];
     }
     //If it is the second panel, change the color to blue!
     else if (panelIndex == 1){
-        [introductionView setBackgroundColor:[UIColor colorWithRed:50.0f/255.0f green:79.0f/255.0f blue:133.0f/255.0f alpha:0.65]];
+        //[introductionView setBackgroundColor:[UIColor colorWithRed:50.0f/255.0f green:79.0f/255.0f blue:133.0f/255.0f alpha:0.65]];
     }
 }
 

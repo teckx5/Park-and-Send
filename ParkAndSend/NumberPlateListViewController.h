@@ -2,7 +2,6 @@
 //  NumberPlateListViewController.h
 //  ParkAndSend
 //
-//  Created by Stephanie on 04/07/2013.
 //  Copyright (c) 2013 Jonathan Larkin. All rights reserved.
 //
 
